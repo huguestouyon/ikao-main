@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ikao - Ikéa, mais en mieux !</title>
+    <meta charset="UTF-8">
+
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    
+    <!--montserrat google font avec les variantes --> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet"> 
+    
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+
+</head>
+<body>
+	<!--
+
+		Comment commencer une page HTML ? 
+		- établir un postulat de notre page : 
+			-> quels sont les éléments dont je dispose, 
+			-> y a t-il des éléments récurrents (type de liens, styles de titres, etc)
+			-> Organiser une hierarchie logique du document : prioriser l'importance des éléments
+		- Commencer le code HTML :
+			-> Etablir un squelette souple (uniquement les grandes zones dans un 1er temps)
+			-> Remplir chaque zone de manière de plus en plus précise, et construire le Css en parralèlle 
+			-> Aller à l'essentiel (intégration Grosse maille), puis affiner chaque zones / éléments
+			-> Chaque élément ne doit pas géner le reste de la page
+		- Affiner l'intégration et le rendu
+			-> Garder la maquette sous les yeux au maximum
+			-> Affiner les tailles de typos, écarts, espaces, etc 
+			-> Ajouter des éléments HTML si besoin uniquement pour la mise en page
+			-> Objectif : Avoir l'HTML le plus propre possible (c'est à dire le plus logique et le moins verbeux possible)
+
+		Bonus : la class "container" => 
+			peut servir a mettre un centrer un element structurant ;
+				.container{
+					max-width: 1200px; /* boite 1200px max centrée */
+					margin: 0 auto; /* centrage horizontal d'un display block */
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+
+		Optimisation CSS : 
+		- Syntaxe BEM pour le nommage des classes : essayer d'etre cohérent niveau marquage et styles
+        - DRY (dont repeat yourself) => mutualisez votre code CSS
+	-->
+
+	<header>
+		<div class="pre-header">
+
+			<div class="container">
+				<!-- coordonnees -->
+				<nav class="pre-header_coords">
+					<ul>
+						<li>
+							<a href="tel:+33101010101">
+							<svg xmlns="http://www.w3.org/2000/svg" class="header_svg" viewBox="0 0 578.106 578.106" xml:space="preserve"><path class="style_svg" d="M577.83 456.128c1.225 9.385-1.635 17.545-8.568 24.48l-81.396 80.781c-3.672 4.08-8.465 7.551-14.381 10.404-5.916 2.857-11.729 4.693-17.439 5.508-.408 0-1.635.105-3.676.309-2.037.203-4.689.307-7.953.307-7.754 0-20.301-1.326-37.641-3.979s-38.555-9.182-63.645-19.584c-25.096-10.404-53.553-26.012-85.376-46.818-31.823-20.805-65.688-49.367-101.592-85.68-28.56-28.152-52.224-55.08-70.992-80.783-18.768-25.705-33.864-49.471-45.288-71.299-11.425-21.828-19.993-41.616-25.705-59.364S4.59 177.362 2.55 164.51-.306 141.56.102 134.216c.408-7.344.612-11.424.612-12.24.816-5.712 2.652-11.526 5.508-17.442s6.324-10.71 10.404-14.382L98.022 8.756c5.712-5.712 12.24-8.568 19.584-8.568 5.304 0 9.996 1.53 14.076 4.59s7.548 6.834 10.404 11.322l65.484 124.236c3.672 6.528 4.692 13.668 3.06 21.42-1.632 7.752-5.1 14.28-10.404 19.584l-29.988 29.988c-.816.816-1.53 2.142-2.142 3.978s-.918 3.366-.918 4.59c1.632 8.568 5.304 18.36 11.016 29.376 4.896 9.792 12.444 21.726 22.644 35.802s24.684 30.293 43.452 48.653c18.36 18.77 34.68 33.354 48.96 43.76 14.277 10.4 26.215 18.053 35.803 22.949 9.588 4.896 16.932 7.854 22.031 8.871l7.648 1.531c.816 0 2.145-.307 3.979-.918 1.836-.613 3.162-1.326 3.979-2.143l34.883-35.496c7.348-6.527 15.912-9.791 25.705-9.791 6.938 0 12.443 1.223 16.523 3.672h.611l118.115 69.768c8.571 5.308 13.67 12.038 15.303 20.198z"/></svg>
+							+33101010101</a>
+							</li>
+						<li>
+							<a href="mailto:info@ikao.com">
+							<svg xmlns="http://www.w3.org/2000/svg" class="header_svg" viewBox="0 0 31.012 31.012" xml:space="preserve"><path class="style_svg" d="M25.109 21.51c-.123 0-.246-.045-.342-.136l-5.754-5.398c-.201-.188-.211-.505-.022-.706.189-.203.504-.212.707-.022l5.754 5.398c.201.188.211.505.022.706-.099.105-.231.158-.365.158zm-19.207 0c-.133 0-.266-.053-.365-.158-.189-.201-.179-.518.022-.706l5.756-5.398c.202-.188.519-.18.707.022.189.201.179.518-.022.706l-5.756 5.398c-.096.091-.219.136-.342.136z"/><path class="style_svg" d="M28.512 26.529H2.5c-1.378 0-2.5-1.121-2.5-2.5V6.982c0-1.379 1.122-2.5 2.5-2.5h26.012c1.378 0 2.5 1.121 2.5 2.5v17.047c0 1.379-1.122 2.5-2.5 2.5zM2.5 5.482c-.827 0-1.5.673-1.5 1.5v17.047c0 .827.673 1.5 1.5 1.5h26.012c.827 0 1.5-.673 1.5-1.5V6.982c0-.827-.673-1.5-1.5-1.5H2.5z"/><path class="style_svg" d="M15.506 18.018c-.665 0-1.33-.221-1.836-.662L.83 6.155C.622 5.974.6 5.658.781 5.449c.183-.208.498-.227.706-.048l12.84 11.2c.639.557 1.719.557 2.357 0L29.508 5.419c.207-.181.522-.161.706.048.181.209.16.524-.048.706L17.342 17.355c-.507.442-1.171.663-1.836.663z"/></svg>
+							info@ikao.com</a>
+							</li>
+						</ul>
+				</nav>
+				<!-- mon compte -->
+				<nav class="pre-header__account"><a href="#">Mon compte</a></nav>
+			</div>
+		</div>
+
+		<div class="container main-header" id="main-header">
+			<!-- logo -->
+			<img class="logo" src="/images/logos/logo.png" alt="Logo">
+			<!-- menu -->
+			<nav class="main-header__menu">
+				<ul>
+					<li><a href="#">ACCUEIL</a></li>
+					<li><a href="#">PRODUITS</a></li>
+					<li><a href="#">A PROPOS</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+
+			<!-- recherche ici pas besoin de formulaire (on a pas de zone de saisie) -->
+			<img class="glass" src="/icones/icones-svg/magnifying-glass.svg" title="Une loupe">
+			<!-- panier -->
+			<img class="papper_bag" src="/icones/icones-svg/paper-bag.svg" title="Un sac">
+			<p><strong>PANIER</strong> <br>
+				3 produits 74.00 €
+			</p>
+		</div>
+	</header>
+
+
+	<main class="homepage container">
+
+		<section class="products-grid">
+			<!-- ma grille de produits -->
+			<!-- chaque item sera composé de : 
+				- 1 lien
+				- 1 image (ou background)
+				- 1 texte (stylisé de manière différentes selon les cas)
+			-->
+			<a href="#">
+				<img src="/images/meubles/nouvellecollection.jpg" alt="Nouvelle Collection">*
+			</a>
+
+			<a href="#">
+				<img src="/images/meubles/canape3places.jpg" alt="Canapé 3 places">
+			</a>
+
+			<a href="#">
+				<img src="/images/meubles/coussinsblancs.jpg" alt="Coussins blancs">
+			</a>
+
+			<a href="#">
+				<img src="/images/meubles/chaise-accourdoirs.jpg" alt="Chaise accoudoir">
+			</a>
+
+			<a href="#">
+				<img src="/images/meubles/ziodinning.jpg" alt="Ziodinning">
+			</a>
+
+			<a href="#">
+				<img src="/images/meubles/totemfloor.jpg" alt="Totemfloor">
+			</a>
+
+			<a href="#">
+				<img src="/images/meubles/tabouret.jpg" alt="Tabouret">
+			</a>
+		</section>
+
+		<section class="products-selection">
+			<!-- en ce moment, recents, meilleures ventes ... -->
+			<nav class="products-selection__header">
+				
+			</nav>
+			<div class="produts-list">
+				
+			</div>
+
+		</section>
+
+		
+		<section class="categories">
+			<!-- horloge -->
+			<!-- table basse -->
+			<!-- lampes -->
+		</section>
+
+		<section class="best-products">
+			<!-- meilleures ventes -->
+		</section>
+
+	</main>
+
+
+	<!--footer -->
+	<div class="partners container">
+		<!-- logos des partenaires (suedois mais pas que) -->
+	</div>
+	<footer>
+		<div class="container">
+			<div class="advantages-footer">
+				<!-- livraison offerte, support, carte cadeaux, etc -->
+			</div>
+
+			<div class="main-footer">
+				<!-- liens, logo, newsletter etc -->
+				<div class="company-footer"></div>
+
+				<div class="menu-footer"></div>
+
+				<div class="newsletter-footer"></div>
+			</div>
+		</div>
+	</footer>
+	<div class="sub-footer">
+		<div class="container">
+			<!-- copyright, logos paiement -->
+			<div class="sub-footer__copyright"></div>
+
+			<div class="sub-footer__payments"></div>
+		</div>
+	</div>
+
+</body>
+</html>

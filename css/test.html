@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Ikao - Ikéa, mais en mieux !</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!--montserrat google font avec les variantes -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="../icomoon/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="pre-header">
+            <div class="container flex">
+                <nav class="pre-header_coords">
+                    <ul>
+                        <li class="hover_header">
+                            <a href="tel:+33101010101">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header_svg" viewBox="0 0 578.106 578.106" xml:space="preserve"><path class="style_svg" d="M577.83 456.128c1.225 9.385-1.635 17.545-8.568 24.48l-81.396 80.781c-3.672 4.08-8.465 7.551-14.381 10.404-5.916 2.857-11.729 4.693-17.439 5.508-.408 0-1.635.105-3.676.309-2.037.203-4.689.307-7.953.307-7.754 0-20.301-1.326-37.641-3.979s-38.555-9.182-63.645-19.584c-25.096-10.404-53.553-26.012-85.376-46.818-31.823-20.805-65.688-49.367-101.592-85.68-28.56-28.152-52.224-55.08-70.992-80.783-18.768-25.705-33.864-49.471-45.288-71.299-11.425-21.828-19.993-41.616-25.705-59.364S4.59 177.362 2.55 164.51-.306 141.56.102 134.216c.408-7.344.612-11.424.612-12.24.816-5.712 2.652-11.526 5.508-17.442s6.324-10.71 10.404-14.382L98.022 8.756c5.712-5.712 12.24-8.568 19.584-8.568 5.304 0 9.996 1.53 14.076 4.59s7.548 6.834 10.404 11.322l65.484 124.236c3.672 6.528 4.692 13.668 3.06 21.42-1.632 7.752-5.1 14.28-10.404 19.584l-29.988 29.988c-.816.816-1.53 2.142-2.142 3.978s-.918 3.366-.918 4.59c1.632 8.568 5.304 18.36 11.016 29.376 4.896 9.792 12.444 21.726 22.644 35.802s24.684 30.293 43.452 48.653c18.36 18.77 34.68 33.354 48.96 43.76 14.277 10.4 26.215 18.053 35.803 22.949 9.588 4.896 16.932 7.854 22.031 8.871l7.648 1.531c.816 0 2.145-.307 3.979-.918 1.836-.613 3.162-1.326 3.979-2.143l34.883-35.496c7.348-6.527 15.912-9.791 25.705-9.791 6.938 0 12.443 1.223 16.523 3.672h.611l118.115 69.768c8.571 5.308 13.67 12.038 15.303 20.198z"/></svg>
+                            <span>+33101010101</span></a>
+                        </li>
+                        <li class="hover_header">
+                            <a class="mail" href="mailto:info@ikao.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header_svg " viewBox="0 0 31.012 31.012" xml:space="preserve"><path class="style_svg" d="M25.109 21.51c-.123 0-.246-.045-.342-.136l-5.754-5.398c-.201-.188-.211-.505-.022-.706.189-.203.504-.212.707-.022l5.754 5.398c.201.188.211.505.022.706-.099.105-.231.158-.365.158zm-19.207 0c-.133 0-.266-.053-.365-.158-.189-.201-.179-.518.022-.706l5.756-5.398c.202-.188.519-.18.707.022.189.201.179.518-.022.706l-5.756 5.398c-.096.091-.219.136-.342.136z"/><path class="style_svg" d="M28.512 26.529H2.5c-1.378 0-2.5-1.121-2.5-2.5V6.982c0-1.379 1.122-2.5 2.5-2.5h26.012c1.378 0 2.5 1.121 2.5 2.5v17.047c0 1.379-1.122 2.5-2.5 2.5zM2.5 5.482c-.827 0-1.5.673-1.5 1.5v17.047c0 .827.673 1.5 1.5 1.5h26.012c.827 0 1.5-.673 1.5-1.5V6.982c0-.827-.673-1.5-1.5-1.5H2.5z"/><path class="style_svg" d="M15.506 18.018c-.665 0-1.33-.221-1.836-.662L.83 6.155C.622 5.974.6 5.658.781 5.449c.183-.208.498-.227.706-.048l12.84 11.2c.639.557 1.719.557 2.357 0L29.508 5.419c.207-.181.522-.161.706.048.181.209.16.524-.048.706L17.342 17.355c-.507.442-1.171.663-1.836.663z"/></svg>
+                            <span>info@ikao.com</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="pre-header__account"><a class="hover_header" href="#">Mon compte</a></nav>
+            </div>
+        </div>
+		<div class="container main-header flex" id="main-header">
+			<!-- logo -->
+			<img class="logo" src="../images/logos/logo.png" alt="Logo">
+			<!-- menu -->
+			<nav class="main-header__menu">
+				<ul class="main-header-ul">
+					<li class="main-header-li"><a href="#">Accueil</a></li>
+					<li class="main-header-li"><a href="#">Produits</a></li>
+					<li class="main-header-li"><a href="#">A propos</a></li>
+					<li class="main-header-li"><a href="#">Blog</a></li>
+					<li class="main-header-li"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- recherche ici pas besoin de formulaire (on a pas de zone de saisie) -->
+			<a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="main-header_svg" viewBox="0 0 512 512"><path d="M495 466.2 377.2 348.4c29.2-35.6 46.8-81.2 46.8-130.9C424 103.5 331.5 11 217.5 11 103.4 11 11 103.5 11 217.5S103.4 424 217.5 424c49.7 0 95.2-17.5 130.8-46.7L466.1 495c8 8 20.9 8 28.9 0 8-7.9 8-20.9 0-28.8zm-277.5-83.3C126.2 382.9 52 308.7 52 217.5S126.2 52 217.5 52C308.7 52 383 126.3 383 217.5s-74.3 165.4-165.5 165.4z"/></svg>
+            </a>
+			<!-- panier -->
+			<a class="panier" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="papper_bag" width="32" height="32" style="enable-background:new 0 0 32 32" xml:space="preserve"><path d="M27.996 8.91A1 1 0 0 0 27 8h-5V6c0-3.309-2.69-6-6-6-3.309 0-6 2.691-6 6v2H5a1 1 0 0 0-.996.91l-2 22A.998.998 0 0 0 3 32h26a1.005 1.005 0 0 0 .996-1.09l-2-22zM12 6c0-2.206 1.795-4 4-4s4 1.794 4 4v2h-8V6zM4.096 30l1.817-20H10v2.277c-.596.347-1 .985-1 1.723a2 2 0 0 0 4 0c0-.738-.404-1.376-1-1.723V10h8v2.277A1.99 1.99 0 0 0 19 14a2 2 0 0 0 4 0 1.99 1.99 0 0 0-1-1.723V10h4.087l1.817 20H4.096z"/></svg>
+                <span class="papper_bag_bold">Panier <br> 3 produits 74.00 €</span>
+            </a>
+		</div>
+    </header>
+
+    <main class="homepage container">
+        <!-- Grid -->
+        <div class="top-card-item">
+            <!-- carte 1 (lampe) -->
+            <a href="#" class="top-card-item-link1">
+                <div class="top-card-item1">
+                    <div class="top-text-style1">
+                        <p>Idees design 2017</p>
+                        <p>Nouvellle</p>
+                        <p>Collection</p>
+                        <p>
+                            Votre intérieur sera le plus beau <br>
+                            Même à la TV c'est pas si beau !
+                        </p>
+                        <p>79.00 €</p>
+                    </div>
+                </div>
+            </a>
+            <!-- carte 2 (canapé) -->
+            <a href="#" class="top-card-item-link2">
+                <!-- Image (background)-->
+                <div class="top-card-item2">
+                    <!-- Texte -->
+                    <div class="top-text-style2-1">
+                            <p>Canapé - fauteuil</p>
+                            <p>Canapé 3 places en cuir</p>
+                            <p>Acheter</p>
+                    </div>
+
+                    <!-- Icone next -->
+                    <div class="top-text-style2-2">
+
+                    </div>
+                    <!-- Rond bleu "499.00 €"-->
+                    <div class="top-text-style2-3">
+                        <!-- Texte dans le rond -->
+                        <div class="top-text-style2-4">
+                            <p>659.00 €</p>
+                            <p>499.00 €</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- carte 3 (coussin blanc) -->
+            <a href="#">
+                <!-- Image (background)-->
+                <div class="top-card-item3">
+                    <!-- Texte -->
+                    <div class="top-text-style3-1">
+                        <p>Blanc blanc</p>
+                        <p>Avec coussins</p>
+                    </div>
+                    <!-- Texte -->
+                    <div class="top-text-style3-2">
+                        <p>99.00 €</p>
+                        <!-- Bouton "Acheter"-->
+                        <div class="top-btn-buy">Acheter</div>
+                    </div>
+                </div>
+            </a>
+            <!-- carte 4 (Chaise blanche)-->
+            <a href="#">
+                <div class="top-card-item4">
+                    <!-- Texte titre -->
+                    <div class="top-text-style4-1">
+                        <h3>Chaise et accoudoirs</h3>
+                    </div>
+                    <!-- Texte (prix) -->
+                    <div class="top-text-style4-2">
+                        <p>129.00 €</p>
+                        <p>99.00 €</p>
+                    </div>
+                    <div class="top-text-style4-3">
+                        <p>Vite j'en profite</p>
+                    </div>
+                    <!-- Icone next -->
+                    <div class="top-text-style4-4">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="bot-card-item">
+            <a href="#">
+                <div class="bot-card-item1">
+                    <div class="bot-text-style1-1">
+                        <p>Chaises</p>
+                        <p>Zio Dining</p>
+                    </div>
+                    <div class="bot-text-style1-2">
+                        <p>Acheter</p>
+                    </div>
+                    <!-- Bouton "Acheter" -->
+                    <div class="bot-btn-buy1">
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="bot-card-item2">
+                    <div class="bot-text-style2-1">
+                        <p>Lampes / accessoires</p>
+                        <p>Totem floor</p>
+                    </div>
+                    <div class="bot-text-style2-2">
+                        <p>Acheter</p>
+                        <!-- Bouton "Acheter" -->
+                        <div class="bot-btn-buy2">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="bot-card-item-link">
+                <div class="bot-card-item3">
+                    <div class="bot-text-style3">
+                        <p>Prix design 2017 - Bar</p>
+                        <p>Tissu rembourré</p>
+                        <p>Cool le tabouret</p>
+                        <p>Vos fesses n'auront jamais eu autant d'amour</p>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+    <!-- Section production -->
+    <section class="products-selection">
+        <h3 class="products-selection-h3">
+                <a href="#">En ce moment</a> <span>|</span>
+                <a href="#">Recent</a> |
+                <a href="#">Meilleures ventes</a>
+        </h3>
+        <!-- Card production -->
+        <div class="products-selection-card">
+            <!-- Card 1 "Bombi Chair" -->
+            <div class="products-selection-card-item">
+                <div class="products-selection-card-item-container1 products-selection-card-item-container">
+                    <div class="white-zone">
+                        <div class="buy"><a href="#"><i class="icon-paper-bag"></i>Acheter</a></div>
+                        <div class="like"><a href="#"><i class="icon-heart"></i></a></div>
+                        <div class="share"><a href="#"><i class="icon-exchange-arrows"></i></a></div>
+                    </div>
+                </div>
+                <p>Bombi Chair</p>
+                <h4>399,00 €</h4>
+            </div>
+            <!-- Card 2 "Marvelous Seater" -->
+            <div class="products-selection-card-item">
+                <div class="products-selection-card-item-container2 products-selection-card-item-container">
+                    <div class="white-zone">
+                        <div class="buy"><a href="#"><i class="icon-paper-bag"></i>Acheter</a></div>
+                        <div class="like"><a href="#"><i class="icon-heart"></i></a></div>
+                        <div class="share"><a href="#"><i class="icon-exchange-arrows"></i></a></div>
+                    </div>
+                </div>
+                <p>Marvelous Seater</p>
+                <h4>599,00 €</h4>
+            </div>
+            <!-- Card 3 "Chair Armrests" -->
+            <div class="products-selection-card-item">
+                <div class="products-selection-card-item-container3 products-selection-card-item-container">
+                    <div class="white-zone">
+                        <div class="buy"><a href="#"><i class="icon-paper-bag"></i>Acheter</a></div>
+                        <div class="like"><a href="#"><i class="icon-heart"></i></a></div>
+                        <div class="share"><a href="#"><i class="icon-exchange-arrows"></i></a></div>
+                    </div>
+                </div>
+                <p>Chair armrests</p>
+                <h4>200,00 €</h4>
+            </div>
+            <!-- Card 4 "Bombi Chir new version"-->
+            <div class="products-selection-card-item">
+                <div class="products-selection-card-item-container4 products-selection-card-item-container">
+                    <div class="white-zone">
+                        <div class="buy"><a href="#"><i class="icon-paper-bag"></i>Acheter</a></div>
+                        <div class="like"><a href="#"><i class="icon-heart"></i></a></div>
+                        <div class="share"><a href="#"><i class="icon-exchange-arrows"></i></a></div>
+                    </div>
+                </div>
+                <p>Bombi Chair new version</p>
+                <h4>399,00 €</h4>
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <img src="../images/meubles/horloges.png" alt="horloge">
+        <img src="../images/meubles/tablebase.jpg" alt="table_basse">
+        <img src="../images/meubles/lampes.png" alt="lampes">
+    </section>
+
+    <section class="best-products">
+        <h3>Meilleures ventes</h3>
+        <div class="best-products-card">
+            <div class="best-products-card-item">
+                <a href="#">
+                    <img src="../images/meubles/bombichair1.png" alt="Bombi Chair">
+                    <div class="best-products-card-item-container">
+                        <span>Puff Chair</span>
+                        <span>287,00 €</span>
+                    </div>
+                </a>
+            </div>
+            <div class="best-products-card-item">
+                <a href="#">
+                    <img src="../images/meubles/seater.png" alt="Seater">
+                    <div class="best-products-card-item-container">
+                        <span>Daddy Chair</span>
+                        <span>399,00 €</span>
+                    </div>
+                </a>
+            </div>
+            <div class="best-products-card-item">
+                <a href="#">
+                    <img src="../images/meubles/chairarmrests.png" alt="Chair armrests">
+                    <div class="best-products-card-item-container">
+                        <span>Wood Chair</span>
+                        <span>198,00 €</span>
+                    </div>
+                </a>
+            </div>
+            <div class="best-products-card-item">
+                <a href="#">
+                    <img src="../images/meubles/bombichair.png" alt="Bombi Chair new version">
+                    <div class="best-products-card-item-container">
+                        <span>Cheers Chair</span>
+                        <span>200,00 €</span>
+                    </div>
+                </a>
+            </div>
+            <div class="best-products-card-item">
+                <a href="#">
+                    <img src="../images/meubles/bombichair.png" alt="Bombi Chair new version">
+                    <div class="best-products-card-item-container">
+                        <span>Loiret Chair</span>
+                        <span>200,00 €</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+    <!--footer -->
+	<div class="partners container">
+		<!-- logos des partenaires (suedois mais pas que) -->
+        <h3>Suedois et pas que ...</h3>
+        <div class="best-partners flex">
+            <a href="#"> <img src="../images/logos/logo1.jpg" alt="Devon&Devon"> </a>
+            <a href="#"> <img src="../images/logos/logo2.jpg" alt="Gan"> </a>
+            <a href="#"> <img src="../images/logos/logo3.jpg" alt="artek"> </a>
+            <a href="#"> <img src="../images/logos/logo4.jpg" alt="toncelli"> </a>
+            <a href="#"> <img src="../images/logos/logo5.jpg" alt="duravit"> </a>
+            <a href="#"> <img src="../images/logos/logo6.jpg" alt="zanotta"> </a>
+        </div>
+    </div>
+	<footer>
+		<div class="container main-footer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="400.156" height="400.155" style="enable-background:new 0 0 400.156 400.155" xml:space="preserve"><path d="M396.31 49.545c6.088-18.271 4.949-32.354-3.432-42.255-9.897-8.376-23.983-9.514-42.258-3.434-18.273 6.091-34.643 16.368-49.111 30.833L255.83 80.372 65.973 34.978c-3.046-.953-5.901-.192-8.564 2.282L20.862 73.805c-2.091 2.096-2.95 4.665-2.568 7.71.571 3.049 2.19 5.33 4.854 6.854l145.038 79.656-73.948 73.948-55.388-15.128c-.38-.192-1.139-.288-2.282-.288-2.666 0-4.853.855-6.567 2.57L2.594 256.819c-1.903 2.279-2.758 4.66-2.568 7.132.378 3.045 1.615 5.235 3.711 6.57l71.946 53.957 53.959 71.944c1.714 2.098 3.999 3.329 6.854 3.716h.571c2.666 0 4.853-.855 6.567-2.566l27.406-27.404c2.474-2.669 3.236-5.619 2.286-8.854l-15.133-55.388 73.947-73.953 79.66 145.046c1.14 2.475 3.138 3.997 5.995 4.569.568.191 1.235.284 1.999.284 2.279 0 4.09-.572 5.421-1.712l36.552-27.407c3.23-2.663 4.373-5.801 3.426-9.418l-45.68-198.711 45.967-45.965c14.462-14.471 24.739-30.843 30.83-49.114z"/></svg>
+            <div>
+                <h3>Livraison offerte</h3>
+                <span>Pour toute commande</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="31.521" height="31.521" style="enable-background:new 0 0 31.521 31.521" xml:space="preserve"><path d="M26.943 4.654c-6.133-6.175-16.111-6.21-22.289-.075-6.177 6.134-6.209 16.112-.077 22.289 6.135 6.176 16.113 6.21 22.291.076 6.176-6.134 6.209-16.112.075-22.29zm-4.355-.731-3.343 3.32a9.232 9.232 0 0 0-6.91-.024l-3.32-3.343a13.713 13.713 0 0 1 13.573.047zM7.221 19.187l-3.343 3.319a13.706 13.706 0 0 1 .047-13.573l3.321 3.343a9.225 9.225 0 0 0-.025 6.911zm1.713 8.412 3.344-3.32a9.23 9.23 0 0 0 6.909.023l3.32 3.344a13.713 13.713 0 0 1-13.573-.047zm11.842-6.787c-2.785 2.766-7.301 2.75-10.068-.035-2.766-2.785-2.75-7.301.036-10.067s7.301-2.751 10.067.034c2.767 2.785 2.751 7.301-.035 10.068zm3.5-1.567a9.227 9.227 0 0 0 .024-6.91l3.343-3.32a13.708 13.708 0 0 1-.047 13.573l-3.32-3.343z"/></svg>
+			<div>
+                <h3>Support 24/7</h3>
+                <span>Un problème ? Pas de problème</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="430.123" height="430.123" style="enable-background:new 0 0 430.123 430.123" xml:space="preserve"><path d="M348.911 169.42 220.258 91.062l81.133-67.164 128.732 79.217-81.212 66.305zm-48.379 148.112 123.547-72.331-74.31-62.858-120.961 73.191 71.724 61.998zm-99.204-61.998L80.355 182.343 6.06 245.201l123.559 72.331 71.709-61.998zM86.406 307.199v23.251l123.472 75.774v-143.81l-81.989 67.168-41.483-22.383zm257.306 0-41.453 22.388-82.001-67.173v143.811l123.454-75.774v-23.252zM209.878 91.062l-81.135-67.164L0 103.115l81.226 66.305 128.652-78.358z"/></svg>
+            <div>
+                <h3>Carte cadeaux</h3>
+                <span>Pour faire plaisir</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="548.176" height="548.176" style="enable-background:new 0 0 548.176 548.176" xml:space="preserve"><path d="M542.748 96.791c-3.614-3.617-7.898-5.426-12.847-5.426H18.274c-4.948 0-9.233 1.809-12.85 5.426C1.811 100.407 0 104.689 0 109.636v328.901c0 4.948 1.811 9.232 5.424 12.847 3.617 3.613 7.902 5.427 12.85 5.427h511.627c4.948 0 9.232-1.813 12.847-5.427 3.613-3.614 5.428-7.898 5.428-12.847V109.636c0-4.947-1.815-9.226-5.428-12.845zm-31.121 250.388c-20.178 0-37.397 7.139-51.679 21.409-14.276 14.271-21.412 31.497-21.412 51.674H109.634c0-20.177-7.137-37.403-21.411-51.674-14.275-14.277-31.499-21.409-51.678-21.409V200.998c20.179 0 37.402-7.139 51.678-21.411 14.274-14.274 21.411-31.501 21.411-51.678h328.909c0 20.177 7.132 37.404 21.409 51.678 14.277 14.272 31.497 21.411 51.675 21.411v146.181z"/><path d="M342.463 195.293c-7.327-11.803-16.988-21.416-28.979-28.837-11.991-7.423-25.122-11.134-39.399-11.134-14.277 0-27.407 3.711-39.399 11.134-11.991 7.421-21.652 17.034-28.98 28.837-7.331 11.798-12.991 24.55-16.988 38.256-3.999 13.704-5.996 27.221-5.996 40.541 0 13.317 1.997 26.835 5.996 40.537 3.997 13.702 9.657 26.46 16.988 38.26 7.329 11.807 16.989 21.412 28.98 28.835 11.993 7.427 25.122 11.14 39.399 11.14 14.277 0 27.408-3.713 39.399-11.14 11.991-7.423 21.652-17.032 28.979-28.835 7.33-11.8 12.99-24.558 16.987-38.26 4.004-13.702 5.995-27.22 5.995-40.537 0-13.319-1.991-26.836-5.995-40.541-3.997-13.706-9.657-26.458-16.987-38.256zm-13.559 151.886H219.267v-27.411h36.54v-82.225h-.572c-2.474 3.807-7.707 9.234-15.699 16.274l-21.982-22.839 42.253-39.115h32.551v127.905h36.546v27.411z"/></svg>
+            <div>
+                <h3>Securite</h3>
+                <span>Paiment 100% sécurisé</span>
+            </div>
+            <div class="">
+                <!-- liens, logo, newsletter etc -->
+                <div class="company-footer">
+                    <img class="logo" src="../images/logos/logo.png" alt="Logo">
+                    <span>Les meubles Ikea, mais en mieux</span>
+                    <span>Quelque part en France</span>
+                    <span>+33030303030</span>
+                    <span>info@ikao.com</span>
+                </div>
+                <div class="menu-footer"></div>
+                <h3>Categories</h3>
+                <ul>
+                    <li>Chaises</li>
+                    <li>Canapé</li>
+                    <li>Salon</li>
+                    <li>Chambres</li>
+                    <li>Tables</li>
+                    <li>Nouveautés</li>
+                </ul>
+                <h3>Information</h3>
+                <ul>
+                    <li>A propos</li>
+                    <li>Contact</li>
+                    <li>Conditions</li>
+                    <li>Service client</li>
+                    <li>FAQs</li>
+                </ul>
+                <h3>Compte</h3>
+                <ul>
+                    <li>Mon compte</li>
+                    <li>Mes commandes</li>
+                    <li>Panier</li>
+                    <li>Paiement sécurisé</li>
+                </ul>
+                <div class="newsletter-footer"></div>
+            </div>
+        </div>
+	</footer>
+	<div class="sub-footer">
+		<div class="container">
+			<!-- copyright, logos paiement -->
+			<div class="sub-footer__copyright">
+                <p>© Ikao.com</p>
+                <p>-tout droit réservés</p>
+            </div>
+			<div class="sub-footer__payments">
+                <i class="icon-visa-pay-logo"></i>
+                <i class="icon-paypal-logo"></i>
+                <i class="icon-mastercard"></i>
+                <i class="icon-discover-logo-of-pay-system"></i>
+                <i class="icon-amazon"></i>
+            </div>
+		</div>
+	</div>
+</body>
+</html>
